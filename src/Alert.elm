@@ -1,5 +1,29 @@
 module Alert exposing (Alert, AlertType(..), Model, initModel, view, subscriptions, Msg(..), update)
 
+{-| This is a basic alert message library. It shows and hides alerts based on time or user input.
+
+
+# Model
+
+@docs Alert, AlertType, Model, initModel
+
+
+# View
+
+@docs view
+
+
+# Subscriptions
+
+@docs subscriptions
+
+
+# State
+
+@docs Msg, update
+
+-}
+
 import Alert.Stylesheets exposing (alertNamespace, CssIds(..), CssClasses(..))
 import Animation exposing (px)
 import Animation.Messenger
@@ -16,6 +40,8 @@ import Time exposing (every, millisecond)
 -- MODEL --
 
 
+{-| This is the alert model. `untilRemove` specifies how long until the message will be automatically removed (a value of `-1` for will display it until it is removed manually). If `icon` is `False` then the alert icon will be hidden (this is only useful if you want to prevent the user from closing the alert).
+-}
 type alias Alert =
     { type_ : AlertType
     , message : String
@@ -24,6 +50,8 @@ type alias Alert =
     }
 
 
+{-| The type of alert, determines which class will be attached to the alert. `Loading` will display a spinner instead of a close icon.
+-}
 type AlertType
     = Info
     | Success
@@ -32,6 +60,8 @@ type AlertType
     | Loading
 
 
+{-| The model of all alerts, includes a dictionary of alerts, the next key to use and state for keeping track of animations.
+-}
 type alias Model =
     { alerts : Dict Int Alert
     , nextKey : Int
@@ -44,6 +74,8 @@ type alias Model =
     }
 
 
+{-| Initialize the model
+-}
 initModel : Bool -> Model
 initModel useAnimations =
     { alerts = Dict.empty
@@ -96,6 +128,8 @@ styles =
     alertNamespace
 
 
+{-| The view takes the model and displays a container with all the alerts
+-}
 view : Model -> Html Msg
 view model =
     Dict.toList model.alerts
@@ -221,6 +255,8 @@ closeIcon key strokeColor =
 -- SUBSCRIPTIONS --
 
 
+{-| The subscriptions takes the model and returns subscriptions for alerts
+-}
 subscriptions : Model -> Sub Msg
 subscriptions model =
     let
@@ -262,6 +298,8 @@ subscriptions model =
 -- UPDATE --
 
 
+{-| `ClearAll` will clear all alerts other than `Loading` alerts and `ForceClearAll` will clear all alerts including `Loading` alerts. To add an alert use `AddAlert`, to remove an alert use `RemoveAlert`. Do not use any of the other message types.
+-}
 type Msg
     = AddAlert Alert
     | RemoveAlert Int
@@ -275,10 +313,7 @@ type Msg
     | Hide Int
 
 
-
--- | Hide Int
-
-
+{-| -}
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of

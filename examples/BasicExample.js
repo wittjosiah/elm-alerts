@@ -20473,22 +20473,22 @@ var _rtfeldman$elm_css_helpers$Html_CssHelpers$Namespace = F4(
 		return {$class: a, classList: b, id: c, name: d};
 	});
 
-var _user$project$Alert_Stylesheets$alertNamespace = _rtfeldman$elm_css_helpers$Html_CssHelpers$withNamespace('alert');
-var _user$project$Alert_Stylesheets$AlertsContainer = {ctor: 'AlertsContainer'};
-var _user$project$Alert_Stylesheets$LoadingAlert = {ctor: 'LoadingAlert'};
-var _user$project$Alert_Stylesheets$ErrorAlert = {ctor: 'ErrorAlert'};
-var _user$project$Alert_Stylesheets$WarningAlert = {ctor: 'WarningAlert'};
-var _user$project$Alert_Stylesheets$SuccessAlert = {ctor: 'SuccessAlert'};
-var _user$project$Alert_Stylesheets$InfoAlert = {ctor: 'InfoAlert'};
-var _user$project$Alert_Stylesheets$alertCss = function (_p0) {
+var _wittjosiah$elm_alerts$Alert_Stylesheets$alertNamespace = _rtfeldman$elm_css_helpers$Html_CssHelpers$withNamespace('alert');
+var _wittjosiah$elm_alerts$Alert_Stylesheets$AlertsContainer = {ctor: 'AlertsContainer'};
+var _wittjosiah$elm_alerts$Alert_Stylesheets$LoadingAlert = {ctor: 'LoadingAlert'};
+var _wittjosiah$elm_alerts$Alert_Stylesheets$ErrorAlert = {ctor: 'ErrorAlert'};
+var _wittjosiah$elm_alerts$Alert_Stylesheets$WarningAlert = {ctor: 'WarningAlert'};
+var _wittjosiah$elm_alerts$Alert_Stylesheets$SuccessAlert = {ctor: 'SuccessAlert'};
+var _wittjosiah$elm_alerts$Alert_Stylesheets$InfoAlert = {ctor: 'InfoAlert'};
+var _wittjosiah$elm_alerts$Alert_Stylesheets$alertCss = function (_p0) {
 	return _rtfeldman$elm_css$Css$stylesheet(
-		A2(_rtfeldman$elm_css$Css_Namespace$namespace, _user$project$Alert_Stylesheets$alertNamespace.name, _p0));
+		A2(_rtfeldman$elm_css$Css_Namespace$namespace, _wittjosiah$elm_alerts$Alert_Stylesheets$alertNamespace.name, _p0));
 }(
 	{
 		ctor: '::',
 		_0: A2(
 			_rtfeldman$elm_css$Css$id,
-			_user$project$Alert_Stylesheets$AlertsContainer,
+			_wittjosiah$elm_alerts$Alert_Stylesheets$AlertsContainer,
 			{
 				ctor: '::',
 				_0: _rtfeldman$elm_css$Css$children(
@@ -20528,7 +20528,7 @@ var _user$project$Alert_Stylesheets$alertCss = function (_p0) {
 															ctor: '::',
 															_0: A2(
 																_rtfeldman$elm_css$Css$withClass,
-																_user$project$Alert_Stylesheets$InfoAlert,
+																_wittjosiah$elm_alerts$Alert_Stylesheets$InfoAlert,
 																{
 																	ctor: '::',
 																	_0: _rtfeldman$elm_css$Css$backgroundColor(
@@ -20552,7 +20552,7 @@ var _user$project$Alert_Stylesheets$alertCss = function (_p0) {
 																ctor: '::',
 																_0: A2(
 																	_rtfeldman$elm_css$Css$withClass,
-																	_user$project$Alert_Stylesheets$SuccessAlert,
+																	_wittjosiah$elm_alerts$Alert_Stylesheets$SuccessAlert,
 																	{
 																		ctor: '::',
 																		_0: _rtfeldman$elm_css$Css$backgroundColor(
@@ -20576,7 +20576,7 @@ var _user$project$Alert_Stylesheets$alertCss = function (_p0) {
 																	ctor: '::',
 																	_0: A2(
 																		_rtfeldman$elm_css$Css$withClass,
-																		_user$project$Alert_Stylesheets$WarningAlert,
+																		_wittjosiah$elm_alerts$Alert_Stylesheets$WarningAlert,
 																		{
 																			ctor: '::',
 																			_0: _rtfeldman$elm_css$Css$backgroundColor(
@@ -20600,7 +20600,7 @@ var _user$project$Alert_Stylesheets$alertCss = function (_p0) {
 																		ctor: '::',
 																		_0: A2(
 																			_rtfeldman$elm_css$Css$withClass,
-																			_user$project$Alert_Stylesheets$ErrorAlert,
+																			_wittjosiah$elm_alerts$Alert_Stylesheets$ErrorAlert,
 																			{
 																				ctor: '::',
 																				_0: _rtfeldman$elm_css$Css$backgroundColor(
@@ -20624,7 +20624,7 @@ var _user$project$Alert_Stylesheets$alertCss = function (_p0) {
 																			ctor: '::',
 																			_0: A2(
 																				_rtfeldman$elm_css$Css$withClass,
-																				_user$project$Alert_Stylesheets$LoadingAlert,
+																				_wittjosiah$elm_alerts$Alert_Stylesheets$LoadingAlert,
 																				{
 																					ctor: '::',
 																					_0: _rtfeldman$elm_css$Css$backgroundColor(
@@ -20738,11 +20738,11 @@ var _user$project$Alert_Stylesheets$alertCss = function (_p0) {
 		_1: {ctor: '[]'}
 	});
 
-var _user$project$Alert$_p0 = _user$project$Alert_Stylesheets$alertNamespace;
-var _user$project$Alert$id = _user$project$Alert$_p0.id;
-var _user$project$Alert$class = _user$project$Alert$_p0.$class;
-var _user$project$Alert$classList = _user$project$Alert$_p0.classList;
-var _user$project$Alert$styles = {
+var _wittjosiah$elm_alerts$Alert$_p0 = _wittjosiah$elm_alerts$Alert_Stylesheets$alertNamespace;
+var _wittjosiah$elm_alerts$Alert$id = _wittjosiah$elm_alerts$Alert$_p0.id;
+var _wittjosiah$elm_alerts$Alert$class = _wittjosiah$elm_alerts$Alert$_p0.$class;
+var _wittjosiah$elm_alerts$Alert$classList = _wittjosiah$elm_alerts$Alert$_p0.classList;
+var _wittjosiah$elm_alerts$Alert$styles = {
 	shown: {
 		ctor: '::',
 		_0: _mdgriffith$elm_style_animation$Animation$opacity(1.0),
@@ -20788,30 +20788,30 @@ var _user$project$Alert$styles = {
 		}
 	}
 };
-var _user$project$Alert$initModel = function (useAnimations) {
+var _wittjosiah$elm_alerts$Alert$initModel = function (useAnimations) {
 	return {alerts: _elm_lang$core$Dict$empty, nextKey: 0, useAnimations: useAnimations, height: _elm_lang$core$Dict$empty, opacity: _elm_lang$core$Dict$empty, padding: _elm_lang$core$Dict$empty, remove: _elm_lang$core$Dict$empty, spinner: _elm_lang$core$Dict$empty};
 };
-var _user$project$Alert$Alert = F4(
+var _wittjosiah$elm_alerts$Alert$Alert = F4(
 	function (a, b, c, d) {
 		return {type_: a, message: b, untilRemove: c, icon: d};
 	});
-var _user$project$Alert$Model = F8(
+var _wittjosiah$elm_alerts$Alert$Model = F8(
 	function (a, b, c, d, e, f, g, h) {
 		return {alerts: a, nextKey: b, useAnimations: c, height: d, opacity: e, padding: f, remove: g, spinner: h};
 	});
-var _user$project$Alert$Styles = F6(
+var _wittjosiah$elm_alerts$Alert$Styles = F6(
 	function (a, b, c, d, e, f) {
 		return {shown: a, hidden: b, flat: c, full: d, bare: e, padded: f};
 	});
-var _user$project$Alert$Loading = {ctor: 'Loading'};
-var _user$project$Alert$Error = {ctor: 'Error'};
-var _user$project$Alert$Warning = {ctor: 'Warning'};
-var _user$project$Alert$Success = {ctor: 'Success'};
-var _user$project$Alert$Info = {ctor: 'Info'};
-var _user$project$Alert$Hide = function (a) {
+var _wittjosiah$elm_alerts$Alert$Loading = {ctor: 'Loading'};
+var _wittjosiah$elm_alerts$Alert$Error = {ctor: 'Error'};
+var _wittjosiah$elm_alerts$Alert$Warning = {ctor: 'Warning'};
+var _wittjosiah$elm_alerts$Alert$Success = {ctor: 'Success'};
+var _wittjosiah$elm_alerts$Alert$Info = {ctor: 'Info'};
+var _wittjosiah$elm_alerts$Alert$Hide = function (a) {
 	return {ctor: 'Hide', _0: a};
 };
-var _user$project$Alert$update = F2(
+var _wittjosiah$elm_alerts$Alert$update = F2(
 	function (msg, model) {
 		var _p1 = msg;
 		switch (_p1.ctor) {
@@ -20827,10 +20827,10 @@ var _user$project$Alert$update = F2(
 								_mdgriffith$elm_style_animation$Animation$toWith,
 								_mdgriffith$elm_style_animation$Animation$speed(
 									{perSecond: 30.0}),
-								_user$project$Alert$styles.padded),
+								_wittjosiah$elm_alerts$Alert$styles.padded),
 							_1: {ctor: '[]'}
 						},
-						_mdgriffith$elm_style_animation$Animation$style(_user$project$Alert$styles.bare)),
+						_mdgriffith$elm_style_animation$Animation$style(_wittjosiah$elm_alerts$Alert$styles.bare)),
 					model.padding) : model.padding;
 				var height = model.useAnimations ? A3(
 					_elm_lang$core$Dict$insert,
@@ -20843,10 +20843,10 @@ var _user$project$Alert$update = F2(
 								_mdgriffith$elm_style_animation$Animation$toWith,
 								_mdgriffith$elm_style_animation$Animation$speed(
 									{perSecond: 100.0}),
-								_user$project$Alert$styles.full),
+								_wittjosiah$elm_alerts$Alert$styles.full),
 							_1: {ctor: '[]'}
 						},
-						_mdgriffith$elm_style_animation$Animation$style(_user$project$Alert$styles.flat)),
+						_mdgriffith$elm_style_animation$Animation$style(_wittjosiah$elm_alerts$Alert$styles.flat)),
 					model.height) : model.height;
 				var opacity = model.useAnimations ? A3(
 					_elm_lang$core$Dict$insert,
@@ -20859,10 +20859,10 @@ var _user$project$Alert$update = F2(
 								_mdgriffith$elm_style_animation$Animation$toWith,
 								_mdgriffith$elm_style_animation$Animation$speed(
 									{perSecond: 2.0}),
-								_user$project$Alert$styles.shown),
+								_wittjosiah$elm_alerts$Alert$styles.shown),
 							_1: {ctor: '[]'}
 						},
-						_mdgriffith$elm_style_animation$Animation$style(_user$project$Alert$styles.hidden)),
+						_mdgriffith$elm_style_animation$Animation$style(_wittjosiah$elm_alerts$Alert$styles.hidden)),
 					model.opacity) : model.opacity;
 				return {
 					ctor: '_Tuple2',
@@ -20907,7 +20907,7 @@ var _user$project$Alert$update = F2(
 						_elm_lang$core$List$filter,
 						function (_p3) {
 							var _p4 = _p3;
-							return _elm_lang$core$Native_Utils.eq(_p4._1.type_, _user$project$Alert$Loading);
+							return _elm_lang$core$Native_Utils.eq(_p4._1.type_, _wittjosiah$elm_alerts$Alert$Loading);
 						},
 						_elm_lang$core$Dict$toList(model.alerts)));
 				return {
@@ -20920,7 +20920,7 @@ var _user$project$Alert$update = F2(
 			case 'ForceClearAll':
 				return {
 					ctor: '_Tuple2',
-					_0: _user$project$Alert$initModel(model.useAnimations),
+					_0: _wittjosiah$elm_alerts$Alert$initModel(model.useAnimations),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
 			case 'Tick':
@@ -20963,15 +20963,15 @@ var _user$project$Alert$update = F2(
 											_mdgriffith$elm_style_animation$Animation$toWith,
 											_mdgriffith$elm_style_animation$Animation$speed(
 												{perSecond: 2.0}),
-											_user$project$Alert$styles.hidden),
+											_wittjosiah$elm_alerts$Alert$styles.hidden),
 										_1: {
 											ctor: '::',
 											_0: _mdgriffith$elm_style_animation$Animation_Messenger$send(
-												_user$project$Alert$Hide(_p13)),
+												_wittjosiah$elm_alerts$Alert$Hide(_p13)),
 											_1: {ctor: '[]'}
 										}
 									},
-									_mdgriffith$elm_style_animation$Animation$style(_user$project$Alert$styles.shown)),
+									_mdgriffith$elm_style_animation$Animation$style(_wittjosiah$elm_alerts$Alert$styles.shown)),
 								acc);
 						}),
 					model.opacity,
@@ -20993,15 +20993,15 @@ var _user$project$Alert$update = F2(
 											_mdgriffith$elm_style_animation$Animation$toWith,
 											_mdgriffith$elm_style_animation$Animation$speed(
 												{perSecond: 100.0}),
-											_user$project$Alert$styles.flat),
+											_wittjosiah$elm_alerts$Alert$styles.flat),
 										_1: {
 											ctor: '::',
 											_0: _mdgriffith$elm_style_animation$Animation_Messenger$send(
-												_user$project$Alert$Hide(_p16)),
+												_wittjosiah$elm_alerts$Alert$Hide(_p16)),
 											_1: {ctor: '[]'}
 										}
 									},
-									_mdgriffith$elm_style_animation$Animation$style(_user$project$Alert$styles.full)),
+									_mdgriffith$elm_style_animation$Animation$style(_wittjosiah$elm_alerts$Alert$styles.full)),
 								acc);
 						}),
 					model.height,
@@ -21023,15 +21023,15 @@ var _user$project$Alert$update = F2(
 											_mdgriffith$elm_style_animation$Animation$toWith,
 											_mdgriffith$elm_style_animation$Animation$speed(
 												{perSecond: 30.0}),
-											_user$project$Alert$styles.bare),
+											_wittjosiah$elm_alerts$Alert$styles.bare),
 										_1: {
 											ctor: '::',
 											_0: _mdgriffith$elm_style_animation$Animation_Messenger$send(
-												_user$project$Alert$Hide(_p19)),
+												_wittjosiah$elm_alerts$Alert$Hide(_p19)),
 											_1: {ctor: '[]'}
 										}
 									},
-									_mdgriffith$elm_style_animation$Animation$style(_user$project$Alert$styles.padded)),
+									_mdgriffith$elm_style_animation$Animation$style(_wittjosiah$elm_alerts$Alert$styles.padded)),
 								acc);
 						}),
 					model.padding,
@@ -21169,33 +21169,33 @@ var _user$project$Alert$update = F2(
 				}
 		}
 	});
-var _user$project$Alert$SpinnerMsg = F2(
+var _wittjosiah$elm_alerts$Alert$SpinnerMsg = F2(
 	function (a, b) {
 		return {ctor: 'SpinnerMsg', _0: a, _1: b};
 	});
-var _user$project$Alert$PaddingAnim = F2(
+var _wittjosiah$elm_alerts$Alert$PaddingAnim = F2(
 	function (a, b) {
 		return {ctor: 'PaddingAnim', _0: a, _1: b};
 	});
-var _user$project$Alert$HeightAnim = F2(
+var _wittjosiah$elm_alerts$Alert$HeightAnim = F2(
 	function (a, b) {
 		return {ctor: 'HeightAnim', _0: a, _1: b};
 	});
-var _user$project$Alert$OpacityAnim = F2(
+var _wittjosiah$elm_alerts$Alert$OpacityAnim = F2(
 	function (a, b) {
 		return {ctor: 'OpacityAnim', _0: a, _1: b};
 	});
-var _user$project$Alert$Tick = function (a) {
+var _wittjosiah$elm_alerts$Alert$Tick = function (a) {
 	return {ctor: 'Tick', _0: a};
 };
-var _user$project$Alert$subscriptions = function (model) {
+var _wittjosiah$elm_alerts$Alert$subscriptions = function (model) {
 	var spinner = A2(
 		_elm_lang$core$List$map,
 		function (_p34) {
 			var _p35 = _p34;
 			return A2(
 				_elm_lang$core$Platform_Sub$map,
-				_user$project$Alert$SpinnerMsg(_p35._0),
+				_wittjosiah$elm_alerts$Alert$SpinnerMsg(_p35._0),
 				_damienklinnert$elm_spinner$Spinner$subscription);
 		},
 		_elm_lang$core$Dict$toList(model.spinner));
@@ -21205,7 +21205,7 @@ var _user$project$Alert$subscriptions = function (model) {
 			var _p37 = _p36;
 			return A2(
 				_mdgriffith$elm_style_animation$Animation$subscription,
-				_user$project$Alert$PaddingAnim(_p37._0),
+				_wittjosiah$elm_alerts$Alert$PaddingAnim(_p37._0),
 				{
 					ctor: '::',
 					_0: _p37._1,
@@ -21219,7 +21219,7 @@ var _user$project$Alert$subscriptions = function (model) {
 			var _p39 = _p38;
 			return A2(
 				_mdgriffith$elm_style_animation$Animation$subscription,
-				_user$project$Alert$HeightAnim(_p39._0),
+				_wittjosiah$elm_alerts$Alert$HeightAnim(_p39._0),
 				{
 					ctor: '::',
 					_0: _p39._1,
@@ -21233,7 +21233,7 @@ var _user$project$Alert$subscriptions = function (model) {
 			var _p41 = _p40;
 			return A2(
 				_mdgriffith$elm_style_animation$Animation$subscription,
-				_user$project$Alert$OpacityAnim(_p41._0),
+				_wittjosiah$elm_alerts$Alert$OpacityAnim(_p41._0),
 				{
 					ctor: '::',
 					_0: _p41._1,
@@ -21243,7 +21243,7 @@ var _user$project$Alert$subscriptions = function (model) {
 		_elm_lang$core$Dict$toList(model.opacity));
 	var time = {
 		ctor: '::',
-		_0: A2(_elm_lang$core$Time$every, _elm_lang$core$Time$millisecond, _user$project$Alert$Tick),
+		_0: A2(_elm_lang$core$Time$every, _elm_lang$core$Time$millisecond, _wittjosiah$elm_alerts$Alert$Tick),
 		_1: {ctor: '[]'}
 	};
 	return _elm_lang$core$Platform_Sub$batch(
@@ -21270,12 +21270,12 @@ var _user$project$Alert$subscriptions = function (model) {
 				}
 			}));
 };
-var _user$project$Alert$ForceClearAll = {ctor: 'ForceClearAll'};
-var _user$project$Alert$ClearAll = {ctor: 'ClearAll'};
-var _user$project$Alert$RemoveAlert = function (a) {
+var _wittjosiah$elm_alerts$Alert$ForceClearAll = {ctor: 'ForceClearAll'};
+var _wittjosiah$elm_alerts$Alert$ClearAll = {ctor: 'ClearAll'};
+var _wittjosiah$elm_alerts$Alert$RemoveAlert = function (a) {
 	return {ctor: 'RemoveAlert', _0: a};
 };
-var _user$project$Alert$closeIcon = F2(
+var _wittjosiah$elm_alerts$Alert$closeIcon = F2(
 	function (key, strokeColor) {
 		return A2(
 			_elm_lang$svg$Svg$svg,
@@ -21309,7 +21309,7 @@ var _user$project$Alert$closeIcon = F2(
 												_1: {
 													ctor: '::',
 													_0: _elm_lang$html$Html_Events$onClick(
-														_user$project$Alert$RemoveAlert(key)),
+														_wittjosiah$elm_alerts$Alert$RemoveAlert(key)),
 													_1: {ctor: '[]'}
 												}
 											}
@@ -21369,7 +21369,7 @@ var _user$project$Alert$closeIcon = F2(
 				}
 			});
 	});
-var _user$project$Alert$alertView = F6(
+var _wittjosiah$elm_alerts$Alert$alertView = F6(
 	function (useAnimations, opacity, height, padding, spinner, _p42) {
 		var _p43 = _p42;
 		var _p46 = _p43._0;
@@ -21400,31 +21400,31 @@ var _user$project$Alert$alertView = F6(
 				case 'Info':
 					return {
 						ctor: '_Tuple2',
-						_0: _user$project$Alert_Stylesheets$InfoAlert,
-						_1: A2(_user$project$Alert$closeIcon, _p46, 'rgb(49, 114, 150)')
+						_0: _wittjosiah$elm_alerts$Alert_Stylesheets$InfoAlert,
+						_1: A2(_wittjosiah$elm_alerts$Alert$closeIcon, _p46, 'rgb(49, 114, 150)')
 					};
 				case 'Success':
 					return {
 						ctor: '_Tuple2',
-						_0: _user$project$Alert_Stylesheets$SuccessAlert,
-						_1: A2(_user$project$Alert$closeIcon, _p46, 'rgb(60, 118, 61)')
+						_0: _wittjosiah$elm_alerts$Alert_Stylesheets$SuccessAlert,
+						_1: A2(_wittjosiah$elm_alerts$Alert$closeIcon, _p46, 'rgb(60, 118, 61)')
 					};
 				case 'Warning':
 					return {
 						ctor: '_Tuple2',
-						_0: _user$project$Alert_Stylesheets$WarningAlert,
-						_1: A2(_user$project$Alert$closeIcon, _p46, 'rgb(138, 109, 59)')
+						_0: _wittjosiah$elm_alerts$Alert_Stylesheets$WarningAlert,
+						_1: A2(_wittjosiah$elm_alerts$Alert$closeIcon, _p46, 'rgb(138, 109, 59)')
 					};
 				case 'Error':
 					return {
 						ctor: '_Tuple2',
-						_0: _user$project$Alert_Stylesheets$ErrorAlert,
-						_1: A2(_user$project$Alert$closeIcon, _p46, 'rgb(132, 53, 52)')
+						_0: _wittjosiah$elm_alerts$Alert_Stylesheets$ErrorAlert,
+						_1: A2(_wittjosiah$elm_alerts$Alert$closeIcon, _p46, 'rgb(132, 53, 52)')
 					};
 				default:
 					return {
 						ctor: '_Tuple2',
-						_0: _user$project$Alert_Stylesheets$LoadingAlert,
+						_0: _wittjosiah$elm_alerts$Alert_Stylesheets$LoadingAlert,
 						_1: A2(
 							_damienklinnert$elm_spinner$Spinner$view,
 							{
@@ -21471,7 +21471,7 @@ var _user$project$Alert$alertView = F6(
 								ctor: '::',
 								_0: {
 									ctor: '::',
-									_0: _user$project$Alert$class(
+									_0: _wittjosiah$elm_alerts$Alert$class(
 										{
 											ctor: '::',
 											_0: msgClass,
@@ -21504,49 +21504,49 @@ var _user$project$Alert$alertView = F6(
 				}
 			});
 	});
-var _user$project$Alert$view = function (model) {
+var _wittjosiah$elm_alerts$Alert$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		{
 			ctor: '::',
-			_0: _user$project$Alert$id(_user$project$Alert_Stylesheets$AlertsContainer),
+			_0: _wittjosiah$elm_alerts$Alert$id(_wittjosiah$elm_alerts$Alert_Stylesheets$AlertsContainer),
 			_1: {ctor: '[]'}
 		},
 		A2(
 			_elm_lang$core$List$map,
-			A5(_user$project$Alert$alertView, model.useAnimations, model.opacity, model.height, model.padding, model.spinner),
+			A5(_wittjosiah$elm_alerts$Alert$alertView, model.useAnimations, model.opacity, model.height, model.padding, model.spinner),
 			_elm_lang$core$List$reverse(
 				_elm_lang$core$Dict$toList(model.alerts))));
 };
-var _user$project$Alert$AddAlert = function (a) {
+var _wittjosiah$elm_alerts$Alert$AddAlert = function (a) {
 	return {ctor: 'AddAlert', _0: a};
 };
 
-var _user$project$BasicExample$initModel = {
+var _wittjosiah$elm_alerts$BasicExample$initModel = {
 	untilRemove: 500,
 	useAnimations: true,
 	forever: false,
 	icon: true,
 	message: 'Test Message',
-	alerts: _user$project$Alert$initModel(true)
+	alerts: _wittjosiah$elm_alerts$Alert$initModel(true)
 };
-var _user$project$BasicExample$Model = F6(
+var _wittjosiah$elm_alerts$BasicExample$Model = F6(
 	function (a, b, c, d, e, f) {
 		return {untilRemove: a, useAnimations: b, forever: c, icon: d, message: e, alerts: f};
 	});
-var _user$project$BasicExample$Message = function (a) {
+var _wittjosiah$elm_alerts$BasicExample$Message = function (a) {
 	return {ctor: 'Message', _0: a};
 };
-var _user$project$BasicExample$Icon = {ctor: 'Icon'};
-var _user$project$BasicExample$Forever = {ctor: 'Forever'};
-var _user$project$BasicExample$UseAnimations = {ctor: 'UseAnimations'};
-var _user$project$BasicExample$UntilRemove = function (a) {
+var _wittjosiah$elm_alerts$BasicExample$Icon = {ctor: 'Icon'};
+var _wittjosiah$elm_alerts$BasicExample$Forever = {ctor: 'Forever'};
+var _wittjosiah$elm_alerts$BasicExample$UseAnimations = {ctor: 'UseAnimations'};
+var _wittjosiah$elm_alerts$BasicExample$UntilRemove = function (a) {
 	return {ctor: 'UntilRemove', _0: a};
 };
-var _user$project$BasicExample$AlertMsg = function (a) {
+var _wittjosiah$elm_alerts$BasicExample$AlertMsg = function (a) {
 	return {ctor: 'AlertMsg', _0: a};
 };
-var _user$project$BasicExample$view = function (model) {
+var _wittjosiah$elm_alerts$BasicExample$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		{ctor: '[]'},
@@ -21557,9 +21557,9 @@ var _user$project$BasicExample$view = function (model) {
 				{
 					ctor: '::',
 					_0: _elm_lang$html$Html_Events$onClick(
-						_user$project$BasicExample$AlertMsg(
-							_user$project$Alert$AddAlert(
-								{type_: _user$project$Alert$Error, message: model.message, untilRemove: model.untilRemove, icon: model.icon}))),
+						_wittjosiah$elm_alerts$BasicExample$AlertMsg(
+							_wittjosiah$elm_alerts$Alert$AddAlert(
+								{type_: _wittjosiah$elm_alerts$Alert$Error, message: model.message, untilRemove: model.untilRemove, icon: model.icon}))),
 					_1: {ctor: '[]'}
 				},
 				{
@@ -21574,9 +21574,9 @@ var _user$project$BasicExample$view = function (model) {
 					{
 						ctor: '::',
 						_0: _elm_lang$html$Html_Events$onClick(
-							_user$project$BasicExample$AlertMsg(
-								_user$project$Alert$AddAlert(
-									{type_: _user$project$Alert$Success, message: model.message, untilRemove: model.untilRemove, icon: model.icon}))),
+							_wittjosiah$elm_alerts$BasicExample$AlertMsg(
+								_wittjosiah$elm_alerts$Alert$AddAlert(
+									{type_: _wittjosiah$elm_alerts$Alert$Success, message: model.message, untilRemove: model.untilRemove, icon: model.icon}))),
 						_1: {ctor: '[]'}
 					},
 					{
@@ -21591,9 +21591,9 @@ var _user$project$BasicExample$view = function (model) {
 						{
 							ctor: '::',
 							_0: _elm_lang$html$Html_Events$onClick(
-								_user$project$BasicExample$AlertMsg(
-									_user$project$Alert$AddAlert(
-										{type_: _user$project$Alert$Info, message: model.message, untilRemove: model.untilRemove, icon: model.icon}))),
+								_wittjosiah$elm_alerts$BasicExample$AlertMsg(
+									_wittjosiah$elm_alerts$Alert$AddAlert(
+										{type_: _wittjosiah$elm_alerts$Alert$Info, message: model.message, untilRemove: model.untilRemove, icon: model.icon}))),
 							_1: {ctor: '[]'}
 						},
 						{
@@ -21608,9 +21608,9 @@ var _user$project$BasicExample$view = function (model) {
 							{
 								ctor: '::',
 								_0: _elm_lang$html$Html_Events$onClick(
-									_user$project$BasicExample$AlertMsg(
-										_user$project$Alert$AddAlert(
-											{type_: _user$project$Alert$Warning, message: model.message, untilRemove: model.untilRemove, icon: model.icon}))),
+									_wittjosiah$elm_alerts$BasicExample$AlertMsg(
+										_wittjosiah$elm_alerts$Alert$AddAlert(
+											{type_: _wittjosiah$elm_alerts$Alert$Warning, message: model.message, untilRemove: model.untilRemove, icon: model.icon}))),
 								_1: {ctor: '[]'}
 							},
 							{
@@ -21625,9 +21625,9 @@ var _user$project$BasicExample$view = function (model) {
 								{
 									ctor: '::',
 									_0: _elm_lang$html$Html_Events$onClick(
-										_user$project$BasicExample$AlertMsg(
-											_user$project$Alert$AddAlert(
-												{type_: _user$project$Alert$Loading, message: model.message, untilRemove: model.untilRemove, icon: model.icon}))),
+										_wittjosiah$elm_alerts$BasicExample$AlertMsg(
+											_wittjosiah$elm_alerts$Alert$AddAlert(
+												{type_: _wittjosiah$elm_alerts$Alert$Loading, message: model.message, untilRemove: model.untilRemove, icon: model.icon}))),
 									_1: {ctor: '[]'}
 								},
 								{
@@ -21663,7 +21663,7 @@ var _user$project$BasicExample$view = function (model) {
 															_elm_lang$core$Basics$toString(model.untilRemove)),
 														_1: {
 															ctor: '::',
-															_0: _elm_lang$html$Html_Events$onInput(_user$project$BasicExample$UntilRemove),
+															_0: _elm_lang$html$Html_Events$onInput(_wittjosiah$elm_alerts$BasicExample$UntilRemove),
 															_1: {ctor: '[]'}
 														}
 													}
@@ -21696,7 +21696,7 @@ var _user$project$BasicExample$view = function (model) {
 														_0: _elm_lang$html$Html_Attributes$type_('checkbox'),
 														_1: {
 															ctor: '::',
-															_0: _elm_lang$html$Html_Events$onClick(_user$project$BasicExample$UseAnimations),
+															_0: _elm_lang$html$Html_Events$onClick(_wittjosiah$elm_alerts$BasicExample$UseAnimations),
 															_1: {ctor: '[]'}
 														}
 													},
@@ -21728,7 +21728,7 @@ var _user$project$BasicExample$view = function (model) {
 															_0: _elm_lang$html$Html_Attributes$type_('checkbox'),
 															_1: {
 																ctor: '::',
-																_0: _elm_lang$html$Html_Events$onClick(_user$project$BasicExample$Forever),
+																_0: _elm_lang$html$Html_Events$onClick(_wittjosiah$elm_alerts$BasicExample$Forever),
 																_1: {ctor: '[]'}
 															}
 														},
@@ -21760,7 +21760,7 @@ var _user$project$BasicExample$view = function (model) {
 																_0: _elm_lang$html$Html_Attributes$type_('checkbox'),
 																_1: {
 																	ctor: '::',
-																	_0: _elm_lang$html$Html_Events$onClick(_user$project$BasicExample$Icon),
+																	_0: _elm_lang$html$Html_Events$onClick(_wittjosiah$elm_alerts$BasicExample$Icon),
 																	_1: {ctor: '[]'}
 																}
 															},
@@ -21795,7 +21795,7 @@ var _user$project$BasicExample$view = function (model) {
 																		_0: _elm_lang$html$Html_Attributes$value(model.message),
 																		_1: {
 																			ctor: '::',
-																			_0: _elm_lang$html$Html_Events$onInput(_user$project$BasicExample$Message),
+																			_0: _elm_lang$html$Html_Events$onInput(_wittjosiah$elm_alerts$BasicExample$Message),
 																			_1: {ctor: '[]'}
 																		}
 																	}
@@ -21808,8 +21808,8 @@ var _user$project$BasicExample$view = function (model) {
 													ctor: '::',
 													_0: A2(
 														_elm_lang$html$Html$map,
-														_user$project$BasicExample$AlertMsg,
-														_user$project$Alert$view(model.alerts)),
+														_wittjosiah$elm_alerts$BasicExample$AlertMsg,
+														_wittjosiah$elm_alerts$Alert$view(model.alerts)),
 													_1: {ctor: '[]'}
 												}
 											}
@@ -21823,18 +21823,18 @@ var _user$project$BasicExample$view = function (model) {
 			}
 		});
 };
-var _user$project$BasicExample$subscriptions = function (model) {
+var _wittjosiah$elm_alerts$BasicExample$subscriptions = function (model) {
 	return A2(
 		_elm_lang$core$Platform_Sub$map,
-		_user$project$BasicExample$AlertMsg,
-		_user$project$Alert$subscriptions(model.alerts));
+		_wittjosiah$elm_alerts$BasicExample$AlertMsg,
+		_wittjosiah$elm_alerts$Alert$subscriptions(model.alerts));
 };
-var _user$project$BasicExample$update = F2(
+var _wittjosiah$elm_alerts$BasicExample$update = F2(
 	function (msg, model) {
 		var _p0 = msg;
 		switch (_p0.ctor) {
 			case 'AlertMsg':
-				var _p1 = A2(_user$project$Alert$update, _p0._0, model.alerts);
+				var _p1 = A2(_wittjosiah$elm_alerts$Alert$update, _p0._0, model.alerts);
 				var alerts = _p1._0;
 				var cmd = _p1._1;
 				return {
@@ -21842,7 +21842,7 @@ var _user$project$BasicExample$update = F2(
 					_0: _elm_lang$core$Native_Utils.update(
 						model,
 						{alerts: alerts}),
-					_1: A2(_elm_lang$core$Platform_Cmd$map, _user$project$BasicExample$AlertMsg, cmd)
+					_1: A2(_elm_lang$core$Platform_Cmd$map, _wittjosiah$elm_alerts$BasicExample$AlertMsg, cmd)
 				};
 			case 'UntilRemove':
 				var _p2 = {
@@ -21885,7 +21885,7 @@ var _user$project$BasicExample$update = F2(
 					_0: _elm_lang$core$Native_Utils.update(
 						model,
 						{
-							alerts: _user$project$Alert$initModel(!model.useAnimations),
+							alerts: _wittjosiah$elm_alerts$Alert$initModel(!model.useAnimations),
 							useAnimations: !model.useAnimations
 						}),
 					_1: _elm_lang$core$Platform_Cmd$none
@@ -21916,18 +21916,18 @@ var _user$project$BasicExample$update = F2(
 				};
 		}
 	});
-var _user$project$BasicExample$main = _elm_lang$html$Html$program(
+var _wittjosiah$elm_alerts$BasicExample$main = _elm_lang$html$Html$program(
 	{
-		init: {ctor: '_Tuple2', _0: _user$project$BasicExample$initModel, _1: _elm_lang$core$Platform_Cmd$none},
-		view: _user$project$BasicExample$view,
-		update: _user$project$BasicExample$update,
-		subscriptions: _user$project$BasicExample$subscriptions
+		init: {ctor: '_Tuple2', _0: _wittjosiah$elm_alerts$BasicExample$initModel, _1: _elm_lang$core$Platform_Cmd$none},
+		view: _wittjosiah$elm_alerts$BasicExample$view,
+		update: _wittjosiah$elm_alerts$BasicExample$update,
+		subscriptions: _wittjosiah$elm_alerts$BasicExample$subscriptions
 	})();
 
 var Elm = {};
 Elm['BasicExample'] = Elm['BasicExample'] || {};
-if (typeof _user$project$BasicExample$main !== 'undefined') {
-    _user$project$BasicExample$main(Elm['BasicExample'], 'BasicExample', undefined);
+if (typeof _wittjosiah$elm_alerts$BasicExample$main !== 'undefined') {
+    _wittjosiah$elm_alerts$BasicExample$main(Elm['BasicExample'], 'BasicExample', undefined);
 }
 
 if (typeof define === "function" && define['amd'])

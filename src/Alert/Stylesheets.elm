@@ -1,20 +1,40 @@
 module Alert.Stylesheets exposing (alertNamespace, alertCss, CssIds(..), CssClasses(..))
 
+{-| This is some basic CSS for the alerts.
+
+
+# Namespace
+
+@docs alertNamespace
+
+
+# CSS
+
+@docs alertCss, CssIds, CssClasses
+
+-}
+
 import Css exposing (..)
 import Css.Elements exposing (..)
 import Css.Namespace exposing (namespace)
 import Html.CssHelpers exposing (withNamespace, Namespace)
 
 
+{-| Namespace for alerts
+-}
 alertNamespace : Namespace String class id msg
 alertNamespace =
     withNamespace "alert"
 
 
+{-| Ids used in the alerts
+-}
 type CssIds
     = AlertsContainer
 
 
+{-| Classes used in the alerts
+-}
 type CssClasses
     = InfoAlert
     | SuccessAlert
@@ -23,6 +43,8 @@ type CssClasses
     | LoadingAlert
 
 
+{-| Basic Styles
+-}
 alertCss : Stylesheet
 alertCss =
     (stylesheet << namespace alertNamespace.name)

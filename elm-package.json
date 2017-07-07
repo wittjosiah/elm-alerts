@@ -1,12 +1,15 @@
 {
     "version": "1.0.0",
-    "summary": "helpful summary of your project, less than 80 characters",
-    "repository": "https://github.com/user/project.git",
+    "summary": "Alert system with several customization options build purely in elm",
+    "repository": "https://github.com/wittjosiah/elm-alerts.git",
     "license": "BSD3",
     "source-directories": [
         "src"
     ],
-    "exposed-modules": [],
+    "exposed-modules": [
+        "Alert",
+        "Alert.Stylesheets"
+    ],
     "dependencies": {
         "damienklinnert/elm-spinner": "3.0.1 <= v < 4.0.0",
         "elm-lang/core": "5.1.1 <= v < 6.0.0",

@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "summary": "Alert system with several customization options build purely in elm",
     "repository": "https://github.com/wittjosiah/elm-alerts.git",
     "license": "BSD3",

@@ -1,0 +1,67 @@
+#AlertsContainer > div {
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 35px 15px 15px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+#AlertsContainer > div.alertInfoAlert {
+    background-color: rgb(217, 237, 247);
+    border: 1px solid rgb(202, 234, 244);
+    color: rgb(49, 114, 150);
+}
+
+#AlertsContainer > div.alertSuccessAlert {
+    background-color: rgb(221, 238, 214);
+    border: 1px solid rgb(206, 224, 192);
+    color: rgb(60, 118, 61);
+}
+
+#AlertsContainer > div.alertWarningAlert {
+    background-color: rgb(252, 248, 227);
+    border: 1px solid rgb(251, 241, 215);
+    color: rgb(138, 109, 59);
+}
+
+#AlertsContainer > div.alertErrorAlert {
+    background-color: rgb(242, 222, 222);
+    border: 1px solid rgb(235, 204, 204);
+    color: rgb(132, 53, 52);
+}
+
+#AlertsContainer > div.alertLoadingAlert {
+    background-color: rgb(217, 237, 247);
+    border: 1px solid rgb(202, 234, 244);
+    color: rgb(49, 114, 150);
+}
+
+#AlertsContainer > div.alertLoadingAlert > li {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+
+#AlertsContainer > div > div {
+    position: absolute;
+    top: 22px;
+    right: 27px;
+}
+
+#AlertsContainer > div > svg {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+#AlertsContainer {
+    font-family: Open Sans, Helvetica Neue, Arial, Sans Serif;
+    position: fixed;
+    width: 300px;
+    top: -2px;
+    right: 8px;
+}

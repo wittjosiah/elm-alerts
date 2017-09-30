@@ -16067,8 +16067,10 @@ var _rtfeldman$elm_css$Css_Preprocess$StyleBlock = F3(
 		return {ctor: 'StyleBlock', _0: a, _1: b, _2: c};
 	});
 
+var _rtfeldman$elm_css$Css_Structure_Output$noIndent = '';
+var _rtfeldman$elm_css$Css_Structure_Output$spaceIndent = '    ';
 var _rtfeldman$elm_css$Css_Structure_Output$indent = function (str) {
-	return A2(_elm_lang$core$Basics_ops['++'], '    ', str);
+	return A2(_elm_lang$core$Basics_ops['++'], _rtfeldman$elm_css$Css_Structure_Output$spaceIndent, str);
 };
 var _rtfeldman$elm_css$Css_Structure_Output$prettyPrintProperty = function (_p0) {
 	var _p1 = _p0;
@@ -16203,31 +16205,54 @@ var _rtfeldman$elm_css$Css_Structure_Output$selectorToString = function (_p11) {
 				},
 				segments)));
 };
-var _rtfeldman$elm_css$Css_Structure_Output$prettyPrintStyleBlock = function (_p14) {
-	var _p15 = _p14;
-	var selectorStr = A2(
-		_elm_lang$core$String$join,
-		', ',
-		A2(
-			_elm_lang$core$List$map,
-			_rtfeldman$elm_css$Css_Structure_Output$selectorToString,
-			{ctor: '::', _0: _p15._0, _1: _p15._1}));
-	return A2(
-		_elm_lang$core$Basics_ops['++'],
-		selectorStr,
-		A2(
-			_elm_lang$core$Basics_ops['++'],
-			' {\n',
+var _rtfeldman$elm_css$Css_Structure_Output$prettyPrintStyleBlock = F2(
+	function (indentLevel, _p14) {
+		var _p15 = _p14;
+		var selectorStr = A2(
+			_elm_lang$core$String$join,
+			', ',
 			A2(
-				_elm_lang$core$Basics_ops['++'],
-				_rtfeldman$elm_css$Css_Structure_Output$prettyPrintProperties(_p15._2),
-				'\n}')));
-};
+				_elm_lang$core$List$map,
+				_rtfeldman$elm_css$Css_Structure_Output$selectorToString,
+				{ctor: '::', _0: _p15._0, _1: _p15._1}));
+		return A2(
+			_elm_lang$core$String$join,
+			'',
+			{
+				ctor: '::',
+				_0: selectorStr,
+				_1: {
+					ctor: '::',
+					_0: ' {\n',
+					_1: {
+						ctor: '::',
+						_0: indentLevel,
+						_1: {
+							ctor: '::',
+							_0: _rtfeldman$elm_css$Css_Structure_Output$prettyPrintProperties(_p15._2),
+							_1: {
+								ctor: '::',
+								_0: '\n',
+								_1: {
+									ctor: '::',
+									_0: indentLevel,
+									_1: {
+										ctor: '::',
+										_0: '}',
+										_1: {ctor: '[]'}
+									}
+								}
+							}
+						}
+					}
+				}
+			});
+	});
 var _rtfeldman$elm_css$Css_Structure_Output$prettyPrintDeclaration = function (declaration) {
 	var _p16 = declaration;
 	switch (_p16.ctor) {
 		case 'StyleBlockDeclaration':
-			return _rtfeldman$elm_css$Css_Structure_Output$prettyPrintStyleBlock(_p16._0);
+			return A2(_rtfeldman$elm_css$Css_Structure_Output$prettyPrintStyleBlock, _rtfeldman$elm_css$Css_Structure_Output$noIndent, _p16._0);
 		case 'MediaRule':
 			var query = A2(
 				_elm_lang$core$String$join,
@@ -16246,7 +16271,7 @@ var _rtfeldman$elm_css$Css_Structure_Output$prettyPrintDeclaration = function (d
 					_elm_lang$core$List$map,
 					function (_p19) {
 						return _rtfeldman$elm_css$Css_Structure_Output$indent(
-							_rtfeldman$elm_css$Css_Structure_Output$prettyPrintStyleBlock(_p19));
+							A2(_rtfeldman$elm_css$Css_Structure_Output$prettyPrintStyleBlock, _rtfeldman$elm_css$Css_Structure_Output$spaceIndent, _p19));
 					},
 					_p16._1));
 			return A2(
@@ -16258,16 +16283,13 @@ var _rtfeldman$elm_css$Css_Structure_Output$prettyPrintDeclaration = function (d
 					A2(
 						_elm_lang$core$Basics_ops['++'],
 						' {\n',
-						A2(
-							_elm_lang$core$Basics_ops['++'],
-							_rtfeldman$elm_css$Css_Structure_Output$indent(blocks),
-							'\n}'))));
+						A2(_elm_lang$core$Basics_ops['++'], blocks, '\n}'))));
 		default:
 			return _elm_lang$core$Native_Utils.crashCase(
 				'Css.Structure.Output',
 				{
-					start: {line: 56, column: 5},
-					end: {line: 73, column: 49}
+					start: {line: 61, column: 5},
+					end: {line: 78, column: 49}
 				},
 				_p16)('not yet implemented :x');
 	}
@@ -18539,7 +18561,9 @@ var _rtfeldman$elm_css$Css$BasicProperty = function (a) {
 																																															return function (_22) {
 																																																return function (_23) {
 																																																	return function (_24) {
-																																																		return {value: a, all: b, alignItems: c, borderStyle: d, boxSizing: e, color: f, cursor: g, display: h, flexBasis: i, flexWrap: j, flexDirection: k, flexDirectionOrWrap: l, justifyContent: m, none: n, number: o, outline: p, overflow: q, textDecorationLine: r, textRendering: s, textIndent: t, textDecorationStyle: u, textTransform: v, length: w, lengthOrAuto: x, lengthOrNone: y, lengthOrNumber: z, lengthOrMinMaxDimension: _1, lengthOrNoneOrMinMaxDimension: _2, lengthOrNumberOrAutoOrNoneOrContent: _3, listStyleType: _4, listStylePosition: _5, listStyleTypeOrPositionOrImage: _6, fontFamily: _7, fontSize: _8, fontStyle: _9, fontWeight: _10, fontVariant: _11, units: _12, numericValue: _13, unitLabel: _14, warnings: _15, backgroundRepeat: _16, backgroundRepeatShorthand: _17, backgroundAttachment: _18, backgroundBlendMode: _19, backgroundOrigin: _20, backgroundImage: _21, lengthOrAutoOrCoverOrContain: _22, intOrAuto: _23, touchAction: _24};
+																																																		return function (_25) {
+																																																			return {value: a, all: b, alignItems: c, borderStyle: d, boxSizing: e, color: f, cursor: g, display: h, flexBasis: i, flexWrap: j, flexDirection: k, flexDirectionOrWrap: l, justifyContent: m, none: n, number: o, outline: p, overflow: q, textDecorationLine: r, textRendering: s, textIndent: t, textDecorationStyle: u, textTransform: v, length: w, lengthOrAuto: x, lengthOrNone: y, lengthOrNumber: z, lengthOrMinMaxDimension: _1, lengthOrNoneOrMinMaxDimension: _2, lengthOrNumberOrAutoOrNoneOrContent: _3, listStyleType: _4, listStylePosition: _5, listStyleTypeOrPositionOrImage: _6, fontFamily: _7, fontSize: _8, fontStyle: _9, fontWeight: _10, fontVariant: _11, units: _12, numericValue: _13, unitLabel: _14, warnings: _15, backgroundRepeat: _16, backgroundRepeatShorthand: _17, backgroundAttachment: _18, backgroundBlendMode: _19, backgroundOrigin: _20, backgroundImage: _21, lengthOrAutoOrCoverOrContain: _22, intOrAuto: _23, touchAction: _24, whiteSpace: _25};
+																																																		};
 																																																	};
 																																																};
 																																															};
@@ -18590,6 +18614,10 @@ var _rtfeldman$elm_css$Css$BasicProperty = function (a) {
 		};
 	};
 };
+var _rtfeldman$elm_css$Css$Normal = F7(
+	function (a, b, c, d, e, f, g) {
+		return {value: a, warnings: b, fontStyle: c, fontWeight: d, featureTagValue: e, overflowWrap: f, whiteSpace: g};
+	});
 var _rtfeldman$elm_css$Css$Compatible = {ctor: 'Compatible'};
 var _rtfeldman$elm_css$Css$calc = F3(
 	function (first, expression, second) {
@@ -19856,6 +19884,9 @@ var _rtfeldman$elm_css$Css$zoomIn = {value: 'zoom-in', cursor: _rtfeldman$elm_cs
 var _rtfeldman$elm_css$Css$zoomOut = {value: 'zoom-out', cursor: _rtfeldman$elm_css$Css$Compatible};
 var _rtfeldman$elm_css$Css$grab = {value: 'grab', cursor: _rtfeldman$elm_css$Css$Compatible};
 var _rtfeldman$elm_css$Css$grabbing = {value: 'grabbing', cursor: _rtfeldman$elm_css$Css$Compatible};
+var _rtfeldman$elm_css$Css$pre = {value: 'pre', whiteSpace: _rtfeldman$elm_css$Css$Compatible};
+var _rtfeldman$elm_css$Css$preWrap = {value: 'pre-wrap', whiteSpace: _rtfeldman$elm_css$Css$Compatible};
+var _rtfeldman$elm_css$Css$preLine = {value: 'pre-line', whiteSpace: _rtfeldman$elm_css$Css$Compatible};
 var _rtfeldman$elm_css$Css$panX = {value: 'pan-x', touchAction: _rtfeldman$elm_css$Css$Compatible};
 var _rtfeldman$elm_css$Css$panLeft = {value: 'pan-left', touchAction: _rtfeldman$elm_css$Css$Compatible};
 var _rtfeldman$elm_css$Css$panRight = {value: 'pan-right', touchAction: _rtfeldman$elm_css$Css$Compatible};
@@ -19984,7 +20015,8 @@ var _rtfeldman$elm_css$Css$initial = {
 	backgroundImage: _rtfeldman$elm_css$Css$Compatible,
 	lengthOrAutoOrCoverOrContain: _rtfeldman$elm_css$Css$Compatible,
 	intOrAuto: _rtfeldman$elm_css$Css$Compatible,
-	touchAction: _rtfeldman$elm_css$Css$Compatible
+	touchAction: _rtfeldman$elm_css$Css$Compatible,
+	whiteSpace: _rtfeldman$elm_css$Css$Compatible
 };
 var _rtfeldman$elm_css$Css$unset = _elm_lang$core$Native_Utils.update(
 	_rtfeldman$elm_css$Css$initial,
@@ -21241,11 +21273,13 @@ var _wittjosiah$elm_alerts$Alert$subscriptions = function (model) {
 				});
 		},
 		_elm_lang$core$Dict$toList(model.opacity));
-	var time = {
+	var time = (_elm_lang$core$Native_Utils.cmp(
+		_elm_lang$core$Dict$size(model.alerts),
+		0) > 0) ? {
 		ctor: '::',
 		_0: A2(_elm_lang$core$Time$every, _elm_lang$core$Time$millisecond, _wittjosiah$elm_alerts$Alert$Tick),
 		_1: {ctor: '[]'}
-	};
+	} : {ctor: '[]'};
 	return _elm_lang$core$Platform_Sub$batch(
 		_elm_lang$core$List$concat(
 			{

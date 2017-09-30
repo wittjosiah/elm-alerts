@@ -261,7 +261,10 @@ subscriptions : Model -> Sub Msg
 subscriptions model =
     let
         time =
-            [ every millisecond Tick ]
+            if Dict.size model.alerts > 0 then
+                [ every millisecond Tick ]
+            else
+                []
 
         opacity =
             Dict.toList model.opacity
